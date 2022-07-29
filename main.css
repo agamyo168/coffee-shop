@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+button {
+  border: none;
+}
+h1 {
+  margin: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.object-cover {
+  object-fit: cover;
+}
+.w-full {
+  width: 100%;
+}
+.flex-item-1 {
+  flex-grow: 1;
+}
+.flex-item-2 {
+  flex-grow: 2;
+}
+.flex-item-3 {
+  flex-grow: 3;
+}
+
+.flex {
+  display: flex;
+}
+.container {
+  display: grid;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+/* margins and padding */
+.action-button {
+  border-radius: 5px;
+  height: 50px;
+  width: 175px;
+  letter-spacing: 1px;
+  padding: 10px 15px 10px;
+  font-weight: 700;
+}
+.buttons-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.search-bar-group {
+  display: flex;
+  justify-content: flex-end;
+}
+.search-bar {
+  padding: 5px 15px;
+  width: 200px;
+}
+.search-bar-group i {
+  padding: 7px;
+}
+/*Pseudo Element*/
+.coffee-and-beans {
+  position: relative;
+}
+.coffee-and-beans::after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: -30px;
+  background-color: #eb8c34;
+  height: 120px;
+  width: 100px;
+  z-index: -10;
+}
+.coffee-and-beans::before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: -19px;
+  background-color: #fab926;
+  height: 40px;
+  width: 40px;
+  z-index: -10;
+  border-radius: 9999px;
+}
+.make-text {
+  position: relative;
+  padding: 50px;
+  text-transform: capitalize;
+}
+.make-text::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  width: 24%;
+  height: 3px;
+  background-color: #fab926;
+}
+.make-text::before {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  width: 80%;
+  height: 3px;
+  background-color: #fab926;
+}
+/* Colors */
+.white-text {
+  color: white;
+}
+.amber-text-600 {
+  color: #cf9c36;
+}
+.amber-text-400 {
+  color: #fbbf24;
+}
+.bg-amber-400 {
+  background-color: #fbbf24;
+}
+@media (max-width: 800px) {
+}
