@@ -54,8 +54,24 @@ header {
 .flex {
   display: flex;
 }
+.constrain {
+  max-width: 1920px;
+  width: 100%;
+  position: relative;
+}
 .container {
-  display: grid;
+  display: flex;
+  justify-content: center;
+}
+.login-control {
+  position: absolute;
+  margin-right: 5%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .justify-center {
   justify-content: center;
@@ -83,7 +99,7 @@ header {
 
 .input-field {
   padding: 5px 15px;
-  width: 200px;
+  border: 1px solid #e6e6e6;
 }
 
 /*Pseudo Element*/
@@ -132,6 +148,7 @@ header {
   height: 6px;
   background-color: #ee8d35;
 }
+
 .coffee-products-title h4 {
   color: #3fb1f2;
 }
@@ -160,5 +177,5 @@ header {
 .bg-amber-400 {
   background-color: #fbbf24;
 }
-@media (min-width: 768px) {
+@media (max-width: 1110px) {
 }
