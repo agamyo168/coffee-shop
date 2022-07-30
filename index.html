@@ -3,32 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css" />
   </head>
+
   <body>
     <header>
-      <div class="search-bar-group flex-item-1">
+      <div style="display:flex; align-items: center;">
           <label class="flex">
             <input
-            class="search-bar"
+              class="input-field"
               type="text"
               placeholder="What do you want to learn?"
             />
             <svg class="bg-amber-400" style="padding:7px;" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path style="fill: #fff;" d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
-              <!-- <i class="fa-solid fa-magnifying-glass white-text  bg-amber-400 " style="padding:7px;"></i> -->
           </label>
-        </div>
-        <div class="flex-item-1 flex align-center">
-          <div class="flex-item-1"></div>
           <a href="" class="amber-text-400" style="text-decoration: none;margin: 0px 50px;font-weight: 700;">Login</a>
-          <button  class="bg-amber-400 white-text action-button ">Join For Free <i class="fa-solid fa-arrow-right " style="margin-left:15px;"></i></button>
-          <div class="flex-item-1"></div>
-        </div>
+          <button  class="bg-amber-400 white-text action-button flex align-center ">Join For Free <svg style="height:17px;width:17px; margin-left:10px; fill:#FFF;" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero"/></svg></button>
       </div>
     </header>
+
     <!-- Text on Image -->
     <div class="relative"> 
       <img class="object-cover w-full" style="min-height:655px;"  src="./assets/images/background.png" alt="a coffee shop">
@@ -36,29 +31,23 @@
         <h1 class="amber-text-600" style="font-size: 66px;" >Coffee first, <span style="padding:0px 80px;">Schemes later.</span></h1>
       </div>
     </div>
-    <!-- Pseudo Element Part -->
-    <div style="padding:200px 0px; align-items: center;" class="flex">
-      <div class="flex-item-1"></div>
-      <div class="flex-item-2 flex" style="justify-content: space-between; align-items: center;">
-    <div class="coffee-and-beans " style="display: inline-block; ">
-      <img  src="./assets/images/image.png" alt="">
-    </div >
-    <div class="make-text" style="width:200px;">
-      <h1>make your own coffee</h1>
-    </div>
-  </div>
-    <div class="flex-item-1"></div>
-  </div>
-<!-- Coffee Products -->
 
-<div class="coffee-products flex" style="padding:75px 20px; align-items: center;" >
-  <div class="flex-item-0.25"></div>
-  <div class="flex-item-3">
-    <div class="coffee-products-title">
-    <h4>Practice Advice</h4>
-    <h1>Coffee Products</h1>
+    <!-- Pseudo Element Part -->
+    <div class="flex" style="padding:200px 0px; align-items: center; " >
+        <div class="coffee-and-beans " >
+          <img  src="./assets/images/image.png" alt="">
+        </div >
+        <div class="make-text" style="width:200px;">
+          <h1>make your own coffee</h1>
+        </div>
     </div>
-    <div class="flex drop-shadow" style="padding:75px 0px;">
+<!-- Coffee Products -->
+<div class="coffee-products " style="padding:75px 20px; " >
+    <div class="coffee-products-title">
+      <h4>Practice Advice</h4>
+      <h1>Coffee Products</h1>
+    </div>
+    <div class="flex drop-shadow" style="padding:75px 0px; overflow:auto">
       <div style="padding:0px 15px">
         <img src="./assets/images/image4.png" alt="">
         <div class="coffee-rating " >
@@ -113,17 +102,19 @@
       </div>
     </div>
   </div>
-  <div class="flex-item-1"></div>
 </div>
 <!-- Join us -->
-
-  <div style="padding:200px 0px;"   >
-  </div>
-    <div style="display:flex;">
-      <div class="flex-item-0.5" style="background-color: red;">1</div>
-      <div class="flex-item-2" style="background-color: green;">2</div>
-      <div class="flex-item-1"style="background-color: green;">3</div>
-      <div class="flex-item-1"style="background-color: red;">4</div>
-    </div>
+<div style="padding:20px">
+  <h1 style="text-transform: uppercase;">Join us</h1>
+  <label  class="input-field" style="display:flex">
+  <input type="text" placeholder="Your Email" style="border-radius:3px;background-color: #f9f9f9;height:30px; border:1px solid #e6e6e6;">
+  <button  class="bg-amber-400 white-text flex justify-center align-center" style="padding:7px">Subscribe</button>
+  </label>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
   </body>
 </html>
